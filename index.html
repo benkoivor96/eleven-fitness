@@ -84,8 +84,8 @@
       </div>
 
       <div class="hero__logo reveal">
-        <div class="hero__logo-card">
-          <img src="assets/images/footer-logo.png" alt="ELEVEN fitness studio" class="hero__logo-img" />
+        <div class="hero__logo-card hero__logo-card--photo">
+          <img src="assets/images/ena-christian.jpg" alt="Christian i Ena — treneri ELEVEN fitness studija" class="hero__photo-img" />
         </div>
       </div>
     </div>
@@ -111,8 +111,8 @@
   <section class="section about" id="about">
     <div class="container about__grid">
       <div class="about__media reveal">
-        <div class="ph ph--tall">
-          <span class="ph__label">Fotografija studija</span>
+        <div class="about__logo-wrap">
+          <img src="assets/images/footer-logo.png" alt="ELEVEN fitness studio" class="about__logo-img" />
         </div>
         <div class="about__media-badge">
           <strong>ELEVEN</strong>
@@ -203,9 +203,9 @@
 
       <div class="trainer-grid">
         <article class="trainer reveal">
-          <img src="assets/images/christian.jpg" alt="Kristian — trener snage i boksa" class="trainer__photo" />
+          <img src="assets/images/christian.jpg" alt="Christian — trener snage i boksa" class="trainer__photo" />
           <div class="trainer__body">
-            <h3>Kristian</h3>
+            <h3>Christian</h3>
             <p class="trainer__role">Trener · Snaga &amp; boks</p>
             <p>Specijaliziran za funkcionalnu snagu, kondiciju i boks. Vodi te kroz svaki ponavljanje s fokusom na ispravnu tehniku.</p>
             <a href="https://www.instagram.com/kix1995/" target="_blank" rel="noopener" class="trainer__ig">@kix1995</a>
@@ -309,15 +309,19 @@
         <div class="contact__actions">
           <a href="tel:+385912368121" class="contact-btn contact-btn--primary">
             <span class="contact-btn__ic">📞</span>
-            <span><strong>Nazovi Kristiana</strong>091 236 8121</span>
+            <span><strong>Nazovi Christiana</strong>091 236 8121</span>
           </a>
           <a href="https://wa.me/385912368121" target="_blank" rel="noopener" class="contact-btn contact-btn--primary">
             <span class="contact-btn__ic">💬</span>
-            <span><strong>WhatsApp</strong>091 236 8121</span>
+            <span><strong>WhatsApp Christian</strong>091 236 8121</span>
           </a>
           <a href="tel:+385996614375" class="contact-btn">
             <span class="contact-btn__ic">📞</span>
             <span><strong>Nazovi Enu</strong>099 661 4375</span>
+          </a>
+          <a href="https://wa.me/385996614375" target="_blank" rel="noopener" class="contact-btn">
+            <span class="contact-btn__ic">💬</span>
+            <span><strong>WhatsApp Ena</strong>099 661 4375</span>
           </a>
           <a href="https://www.instagram.com/eleven_fitness_studio/" target="_blank" rel="noopener" class="contact-btn">
             <span class="contact-btn__ic">📸</span>
@@ -352,12 +356,12 @@
             <input type="email" name="email" required placeholder="ime@email.com" />
           </label>
           <label>
-            Broj telefona <em>(nije obavezno)</em>
+            <span class="label__row">Broj telefona <em class="label__opt">(nije obavezno)</em></span>
             <input type="tel" name="telefon" placeholder="099 123 4567" />
           </label>
           <label>
-            Poruka (nije obavezno)
-            <textarea name="poruka" rows="3" placeholder="Npr. koji program te zanima ili kad ti odgovara dolazak…"></textarea>
+            Poruka
+            <textarea name="poruka" rows="3" required placeholder="Npr. koji program te zanima ili kad ti odgovara dolazak…"></textarea>
           </label>
 
           <button type="submit" class="btn btn--gold btn--lg btn--block">Pošalji prijavu</button>

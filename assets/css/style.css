@@ -119,13 +119,12 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
 
 .hero__logo{display:flex;justify-content:center}
 .hero__logo-card{
-  display:flex;align-items:center;justify-content:center;
-  padding:48px 40px;border:1px solid var(--line);border-radius:24px;
-  background:linear-gradient(160deg,rgba(255,255,255,.05),rgba(255,255,255,.01));
-  box-shadow:0 30px 70px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.06);
-  backdrop-filter:blur(6px);
+  border:1px solid var(--line);border-radius:24px;overflow:hidden;
+  box-shadow:0 30px 70px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.06);
+  position:relative;
 }
-.hero__logo-img{width:200px;height:auto;display:block}
+.hero__logo-card--photo{padding:0}
+.hero__photo-img{width:100%;height:100%;min-height:420px;object-fit:cover;object-position:50% 15%;display:block}
 
 .hero__scroll{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);width:26px;height:42px;border:2px solid var(--line);border-radius:14px;display:flex;justify-content:center;padding-top:8px}
 .hero__scroll span{width:4px;height:8px;background:var(--gold-2);border-radius:2px;animation:scroll 1.6s var(--ease) infinite}
@@ -162,6 +161,14 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
 }
 .about__media-badge strong{font-family:var(--font-head);letter-spacing:.2em;display:block;color:var(--gold-2)}
 .about__media-badge span{font-size:.82rem;color:var(--muted)}
+.about__logo-wrap{
+  border:1px solid var(--line);border-radius:var(--radius);
+  background:linear-gradient(160deg,var(--surface),var(--bg-2));
+  display:flex;align-items:center;justify-content:center;
+  min-height:460px;
+  box-shadow:0 24px 60px rgba(0,0,0,.4);
+}
+.about__logo-img{width:220px;height:auto;display:block;opacity:.92}
 .about__text p{color:var(--muted);margin-top:16px}
 .ticklist{margin:26px 0 30px;display:grid;gap:12px}
 .ticklist li{display:flex;align-items:center;gap:12px;color:var(--text)}
@@ -252,12 +259,13 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
 .form-status.is-ok{color:#6ee7a8}
 .form-status.is-err{color:#f59e9e}
 .form-fineprint{color:var(--muted-2);font-size:.78rem;text-transform:none;letter-spacing:0;font-family:var(--font-body)}
-.contact-form label em{font-style:normal;color:var(--muted-2);font-weight:400;text-transform:none;letter-spacing:0;font-family:var(--font-body);font-size:.78rem}
+.label__row{display:flex;align-items:center;gap:7px}
+.label__opt{font-style:normal;color:var(--muted-2);font-weight:400;text-transform:none;letter-spacing:0;font-family:var(--font-body);font-size:.78rem}
 
 /* ===== Footer ===== */
 .footer{background:var(--bg-2);border-top:1px solid var(--line);padding-top:54px}
 .footer__inner{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:32px;padding-bottom:40px}
-.footer__brand{display:flex;align-items:center;justify-content:center}
+.footer__brand{display:flex;align-items:center}
 .footer__logo{height:110px;width:auto;display:block;opacity:.92}
 .footer__links,.footer__contact{display:flex;flex-direction:column;gap:11px}
 .footer__links a,.footer__contact a,.footer__contact span{color:var(--muted);font-size:.92rem;transition:color .2s}
