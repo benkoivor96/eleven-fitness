@@ -13,7 +13,7 @@
   <meta property="og:description" content="Grupni i individualni treninzi za žene i muškarce. Prvi probni trening je besplatan." />
   <meta property="og:locale" content="hr_HR" />
 
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a0a0b'/%3E%3Ctext x='50' y='66' font-family='Arial' font-weight='900' font-size='52' fill='%23e3c77f' text-anchor='middle'%3E11%3C/text%3E%3C/svg%3E" />
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,12 +27,7 @@
   <header class="nav" id="nav">
     <div class="container nav__inner">
       <a href="#hero" class="brand" aria-label="ELEVEN fitness studio — početna">
-        <span class="brand__mark" aria-hidden="true">
-          <svg viewBox="0 0 100 100" width="34" height="34">
-            <use href="#eleven-mark" />
-          </svg>
-        </span>
-        <span class="brand__word">ELEVEN</span>
+        <img src="assets/images/header-logo.png" alt="ELEVEN fitness studio" class="brand__logo" />
       </a>
 
       <nav class="nav__links" id="navLinks" aria-label="Glavna navigacija">
@@ -90,11 +85,7 @@
 
       <div class="hero__logo reveal">
         <div class="hero__logo-card">
-          <svg viewBox="0 0 100 100" width="120" height="120" class="hero__mark">
-            <use href="#eleven-mark" />
-          </svg>
-          <span class="hero__logo-word">ELEVEN</span>
-          <span class="hero__logo-tag">FITNESS STUDIO</span>
+          <img src="assets/images/footer-logo.png" alt="ELEVEN fitness studio" class="hero__logo-img" />
         </div>
       </div>
     </div>
@@ -212,7 +203,7 @@
 
       <div class="trainer-grid">
         <article class="trainer reveal">
-          <div class="ph ph--portrait"><span class="ph__label">Fotografija trenera</span></div>
+          <img src="assets/images/christian.jpg" alt="Kristian — trener snage i boksa" class="trainer__photo" />
           <div class="trainer__body">
             <h3>Kristian</h3>
             <p class="trainer__role">Trener · Snaga &amp; boks</p>
@@ -222,7 +213,7 @@
         </article>
 
         <article class="trainer reveal">
-          <div class="ph ph--portrait"><span class="ph__label">Fotografija trenerice</span></div>
+          <img src="assets/images/ena.jpg" alt="Ena Cvijanović — trenerica" class="trainer__photo" />
           <div class="trainer__body">
             <h3>Ena Cvijanović</h3>
             <p class="trainer__role">Trenerica · Žene &amp; funkcionalni trening</p>
@@ -390,13 +381,7 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <span class="brand__mark" aria-hidden="true">
-          <svg viewBox="0 0 100 100" width="40" height="40"><use href="#eleven-mark" /></svg>
-        </span>
-        <div>
-          <strong>ELEVEN</strong>
-          <span>fitness studio</span>
-        </div>
+        <img src="assets/images/footer-logo.png" alt="ELEVEN fitness studio" class="footer__logo" />
       </div>
       <nav class="footer__links" aria-label="Footer navigacija">
         <a href="#about">O nama</a>
@@ -419,25 +404,6 @@
   <!-- Sticky mobile CTA -->
   <a href="#contact" class="sticky-cta">Besplatni probni trening</a>
 
-  <!-- ===== SVG sprite (logo mark) ===== -->
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-    <defs>
-      <symbol id="eleven-mark" viewBox="0 0 100 100">
-        <polygon points="50,8 84,28 84,72 50,92 16,72 16,28"
-                 fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/>
-        <g stroke="currentColor" stroke-width="2.4" stroke-linecap="round" opacity="0.85">
-          <line x1="34" y1="32" x2="34" y2="68"/>
-          <line x1="42" y1="30" x2="42" y2="70"/>
-          <line x1="58" y1="30" x2="58" y2="70"/>
-          <line x1="66" y1="32" x2="66" y2="68"/>
-        </g>
-        <!-- kettlebell -->
-        <path d="M43 44 a7 7 0 0 1 14 0" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
-        <path d="M41 47 q9 -2 18 0 q6 4 4 13 a14 14 0 1 1 -26 0 q-2 -9 4 -13 Z"
-              fill="currentColor" stroke="none"/>
-      </symbol>
-    </defs>
-  </svg>
 
   <script src="assets/js/main.js"></script>
 </body>

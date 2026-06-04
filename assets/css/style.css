@@ -79,9 +79,8 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
 .nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .3s,border-color .3s,backdrop-filter .3s;border-bottom:1px solid transparent}
 .nav.is-scrolled{background:rgba(10,10,11,.82);backdrop-filter:blur(14px);border-color:var(--line)}
 .nav__inner{display:flex;align-items:center;justify-content:space-between;height:72px}
-.brand{display:flex;align-items:center;gap:11px}
-.brand__mark{color:var(--gold-2);display:flex}
-.brand__word{font-family:var(--font-head);font-weight:700;letter-spacing:.24em;font-size:1.15rem}
+.brand{display:flex;align-items:center}
+.brand__logo{height:38px;width:auto;display:block}
 .nav__links{display:flex;align-items:center;gap:30px}
 .nav__links a:not(.btn){font-family:var(--font-head);font-weight:500;text-transform:uppercase;letter-spacing:.05em;font-size:.82rem;color:var(--muted);transition:color .2s;position:relative}
 .nav__links a:not(.btn):hover{color:var(--text)}
@@ -120,15 +119,13 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
 
 .hero__logo{display:flex;justify-content:center}
 .hero__logo-card{
-  display:flex;flex-direction:column;align-items:center;gap:14px;
+  display:flex;align-items:center;justify-content:center;
   padding:48px 40px;border:1px solid var(--line);border-radius:24px;
   background:linear-gradient(160deg,rgba(255,255,255,.05),rgba(255,255,255,.01));
   box-shadow:0 30px 70px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.06);
   backdrop-filter:blur(6px);
 }
-.hero__mark{color:var(--text)}
-.hero__logo-word{font-family:var(--font-head);font-weight:700;letter-spacing:.4em;font-size:1.6rem;padding-left:.4em}
-.hero__logo-tag{font-family:var(--font-head);font-weight:300;letter-spacing:.35em;font-size:.72rem;color:var(--muted);padding-left:.35em}
+.hero__logo-img{width:200px;height:auto;display:block}
 
 .hero__scroll{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);width:26px;height:42px;border:2px solid var(--line);border-radius:14px;display:flex;justify-content:center;padding-top:8px}
 .hero__scroll span{width:4px;height:8px;background:var(--gold-2);border-radius:2px;animation:scroll 1.6s var(--ease) infinite}
@@ -189,7 +186,7 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
 /* ===== Trainers ===== */
 .trainer-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
 .trainer{display:grid;grid-template-columns:.85fr 1.15fr;gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--surface)}
-.trainer .ph{border:none;border-radius:0;min-height:100%}
+.trainer__photo{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;min-height:340px}
 .trainer__body{padding:30px 28px;display:flex;flex-direction:column}
 .trainer__body h3{font-family:var(--font-head);font-weight:600;text-transform:uppercase;letter-spacing:.03em;font-size:1.5rem}
 .trainer__role{color:var(--gold-2);font-size:.85rem;text-transform:uppercase;letter-spacing:.1em;margin:4px 0 14px}
@@ -257,10 +254,8 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
 /* ===== Footer ===== */
 .footer{background:var(--bg-2);border-top:1px solid var(--line);padding-top:54px}
 .footer__inner{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:32px;padding-bottom:40px}
-.footer__brand{display:flex;align-items:center;gap:14px}
-.footer__brand .brand__mark{color:var(--gold-2)}
-.footer__brand strong{font-family:var(--font-head);font-weight:700;letter-spacing:.24em;font-size:1.25rem;display:block}
-.footer__brand span{color:var(--muted);font-size:.85rem}
+.footer__brand{display:flex;align-items:center}
+.footer__logo{height:80px;width:auto;display:block;opacity:.9}
 .footer__links,.footer__contact{display:flex;flex-direction:column;gap:11px}
 .footer__links a,.footer__contact a,.footer__contact span{color:var(--muted);font-size:.92rem;transition:color .2s}
 .footer__links a:hover,.footer__contact a:hover{color:var(--gold-2)}
