@@ -104,10 +104,10 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
 }
 .hero__grain{position:absolute;inset:0;z-index:-1;opacity:.05;pointer-events:none;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
-.hero__inner{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center;padding-top:40px;padding-bottom:80px}
+.hero__inner{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:flex-start;padding-top:40px;padding-bottom:80px}
 .hero__title{
   font-family:var(--font-head);font-weight:700;text-transform:uppercase;
-  font-size:clamp(2.7rem,7.6vw,5.6rem);line-height:.96;letter-spacing:-.01em;margin-bottom:24px;
+  font-size:clamp(2.4rem,5.8vw,4.2rem);line-height:.96;letter-spacing:-.01em;margin-bottom:24px;
 }
 .hero__sub{color:var(--muted);font-size:clamp(1rem,1.6vw,1.18rem);max-width:520px;margin-bottom:34px}
 .hero__cta{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:48px}
@@ -117,14 +117,17 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
 .hero__badges span{color:var(--muted-2);font-size:.82rem;text-transform:uppercase;letter-spacing:.08em}
 .stars{color:var(--gold-2);letter-spacing:1px}
 
-.hero__logo{display:flex;justify-content:center}
+.hero__logo{display:flex;justify-content:center;flex-direction:column;gap:0;position:relative}
 .hero__logo-card{
   border:1px solid var(--line);border-radius:24px;overflow:hidden;
   box-shadow:0 30px 70px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.06);
   position:relative;
 }
 .hero__logo-card--photo{padding:0}
-.hero__photo-img{width:100%;height:100%;min-height:420px;object-fit:cover;object-position:50% 15%;display:block}
+.hero__photo-img{width:100%;height:100%;min-height:528px;object-fit:cover;object-position:50% 15%;display:block}
+.hero__badge{position:absolute;left:-14px;bottom:24px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 22px;box-shadow:0 18px 40px rgba(0,0,0,.4);}
+.hero__badge strong{font-family:var(--font-head);letter-spacing:.2em;display:block;color:var(--gold-2);font-size:.88rem}
+.hero__badge span{font-size:.82rem;color:var(--muted)}
 
 .hero__scroll{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);width:26px;height:42px;border:2px solid var(--line);border-radius:14px;display:flex;justify-content:center;padding-top:8px}
 .hero__scroll span{width:4px;height:8px;background:var(--gold-2);border-radius:2px;animation:scroll 1.6s var(--ease) infinite}
@@ -162,13 +165,10 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
 .about__media-badge strong{font-family:var(--font-head);letter-spacing:.2em;display:block;color:var(--gold-2)}
 .about__media-badge span{font-size:.82rem;color:var(--muted)}
 .about__logo-wrap{
-  border:1px solid var(--line);border-radius:var(--radius);
-  background:linear-gradient(160deg,var(--surface),var(--bg-2));
   display:flex;align-items:center;justify-content:center;
-  min-height:460px;
-  box-shadow:0 24px 60px rgba(0,0,0,.4);
+  padding:48px 0;
 }
-.about__logo-img{width:220px;height:auto;display:block;opacity:.92}
+.about__logo-img{width:165px;height:auto;display:block;opacity:.92}
 .about__text p{color:var(--muted);margin-top:16px}
 .ticklist{margin:26px 0 30px;display:grid;gap:12px}
 .ticklist li{display:flex;align-items:center;gap:12px;color:var(--text)}
@@ -292,9 +292,14 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
 
 /* ===== Responsive ===== */
 @media (max-width:980px){
-  .hero__inner{grid-template-columns:1fr;gap:40px}
+  .hero__inner{grid-template-columns:1fr;gap:32px}
   .hero__logo{order:-1;justify-content:flex-start}
-  .hero__logo-card{padding:32px 30px}
+  .hero__logo-card{padding:0}
+  .hero__photo-img{min-height:330px;max-height:374px}
+  .hero__badge{padding:10px 14px;border-radius:10px;left:-8px;bottom:-8px}
+  .hero__badge strong{font-size:.7rem}
+  .hero__badge span{font-size:.66rem}
+  .hero__cta{display:none}
   .about__grid,.contact__grid{grid-template-columns:1fr}
   .contact__form-wrap{position:static}
   .cards,.reviews__grid{grid-template-columns:repeat(2,1fr)}
