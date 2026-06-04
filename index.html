@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ELEVEN Fitness Studio | Grupni i individualni treninzi — Zagreb</title>
+  <meta name="description" content="ELEVEN fitness studio u Zagrebu (Makarska ul. 40). Grupni i individualni treninzi za žene i muškarce: boks, sparing, bootcamp, funkcionalni i privatni treninzi. Prijavi se na besplatni probni trening." />
+  <meta name="theme-color" content="#0a0a0b" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="ELEVEN Fitness Studio — Zagreb" />
+  <meta property="og:description" content="Grupni i individualni treninzi za žene i muškarce. Prvi probni trening je besplatan." />
+  <meta property="og:locale" content="hr_HR" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a0a0b'/%3E%3Ctext x='50' y='66' font-family='Arial' font-weight='900' font-size='52' fill='%23e3c77f' text-anchor='middle'%3E11%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#hero" class="brand" aria-label="ELEVEN fitness studio — početna">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 100 100" width="34" height="34">
+            <use href="#eleven-mark" />
+          </svg>
+        </span>
+        <span class="brand__word">ELEVEN</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Glavna navigacija">
+        <a href="#about">O nama</a>
+        <a href="#programs">Treninzi</a>
+        <a href="#trainers">Treneri</a>
+        <a href="#start">Počni</a>
+        <a href="#contact">Kontakt</a>
+        <a href="#contact" class="btn btn--gold nav__cta">Besplatni probni trening</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Otvori izbornik" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__grain" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <div class="hero__content reveal">
+        <p class="eyebrow"><span class="dot"></span> Sportski i rekreacijski centar · Zagreb</p>
+        <h1 class="hero__title">
+          IZGRADI<br />
+          <span class="text-gold">SNAŽNIJU</span> VERZIJU<br />
+          SEBE.
+        </h1>
+        <p class="hero__sub">
+          Grupni i individualni treninzi za žene i muškarce. Bez izlika,
+          bez praznog hoda — samo treninzi koji daju rezultate, vođeni
+          trenerima koji te prate na svakom koraku.
+        </p>
+        <div class="hero__cta">
+          <a href="#contact" class="btn btn--gold btn--lg">Besplatni probni trening</a>
+          <a href="#programs" class="btn btn--ghost btn--lg">Pogledaj treninge</a>
+        </div>
+
+        <ul class="hero__badges">
+          <li>
+            <strong>5.0 <span class="stars">★★★★★</span></strong>
+            <span>Google ocjena</span>
+          </li>
+          <li>
+            <strong>Žene &amp; muškarci</strong>
+            <span>Grupno i 1-na-1</span>
+          </li>
+          <li>
+            <strong>Makarska 40</strong>
+            <span>Zagreb</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero__logo reveal">
+        <div class="hero__logo-card">
+          <svg viewBox="0 0 100 100" width="120" height="120" class="hero__mark">
+            <use href="#eleven-mark" />
+          </svg>
+          <span class="hero__logo-word">ELEVEN</span>
+          <span class="hero__logo-tag">FITNESS STUDIO</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="hero__scroll" aria-label="Skrolaj dolje">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ===== Marquee strip ===== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>BOKS</span><i>✦</i><span>SPARING</span><i>✦</i><span>BOOTCAMP</span><i>✦</i>
+      <span>FUNKCIONALNI TRENING</span><i>✦</i><span>PRIVATNI TRENINZI</span><i>✦</i>
+      <span>FITKID</span><i>✦</i><span>KONDICIJA &amp; SNAGA</span><i>✦</i>
+      <span>BOKS</span><i>✦</i><span>SPARING</span><i>✦</i><span>BOOTCAMP</span><i>✦</i>
+      <span>FUNKCIONALNI TRENING</span><i>✦</i><span>PRIVATNI TRENINZI</span><i>✦</i>
+      <span>FITKID</span><i>✦</i><span>KONDICIJA &amp; SNAGA</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- ===== About ===== -->
+  <section class="section about" id="about">
+    <div class="container about__grid">
+      <div class="about__media reveal">
+        <div class="ph ph--tall">
+          <span class="ph__label">Fotografija studija</span>
+        </div>
+        <div class="about__media-badge">
+          <strong>ELEVEN</strong>
+          <span>Tvoj prostor za napredak</span>
+        </div>
+      </div>
+      <div class="about__text reveal">
+        <p class="eyebrow"><span class="dot"></span> O nama</p>
+        <h2 class="section__title">Više od teretane.<br />Zajednica koja te gura naprijed.</h2>
+        <p>
+          ELEVEN je fitness studio u srcu Zagreba u kojem se svi osjećaju
+          dobrodošlo — od potpunih početnika do iskusnih sportaša. Naš pristup
+          je jednostavan: pravi trening, pravo vodstvo i okruženje koje te
+          motivira da se vraćaš.
+        </p>
+        <p>
+          Bilo da želiš smršaviti, izgraditi snagu, naučiti boks ili samo
+          osjetiti zdrav sportski duh — kod nas pronalaziš program skrojen
+          baš za tebe.
+        </p>
+        <ul class="ticklist">
+          <li>Grupni i individualni treninzi</li>
+          <li>Programi za žene i muškarce</li>
+          <li>Iskusni i certificirani treneri</li>
+          <li>Prvi probni trening je besplatan</li>
+        </ul>
+        <a href="#contact" class="btn btn--gold">Rezerviraj besplatni trening</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Programs ===== -->
+  <section class="section programs" id="programs">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow"><span class="dot"></span> Treninzi</p>
+        <h2 class="section__title">Pronađi svoj program</h2>
+        <p class="section__lead">
+          Raznoliki treninzi za svaku razinu i svaki cilj. Ne znaš odakle početi?
+          Dođi na besplatni probni trening i mi ćemo te usmjeriti.
+        </p>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card__icon" aria-hidden="true">🥊</div>
+          <h3>Boks &amp; sparing</h3>
+          <p>Tehnika, kondicija i samopouzdanje. Od osnova udaraca do kontroliranog sparinga u sigurnom okruženju.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon" aria-hidden="true">🏋️</div>
+          <h3>Funkcionalni trening</h3>
+          <p>Snaga, mobilnost i izdržljivost kroz pokrete koji ti koriste i izvan studija. Cijelo tijelo, svaki put.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon" aria-hidden="true">🔥</div>
+          <h3>Bootcamp</h3>
+          <p>Intenzivni grupni trening — bodyweight, utezi i kardio. Maksimalno sagorijevanje, maksimalna energija.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon" aria-hidden="true">💪</div>
+          <h3>Treninzi za žene</h3>
+          <p>Programi osmišljeni za snagu, oblikovanje i kondiciju — u podržavajućoj i motivirajućoj atmosferi.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon" aria-hidden="true">🎯</div>
+          <h3>Privatni treninzi</h3>
+          <p>1-na-1 s trenerom, plan skrojen baš za tvoje ciljeve i tempo. Najbrži put do rezultata.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon" aria-hidden="true">🤸</div>
+          <h3>FitKid &amp; djeca</h3>
+          <p>Trening kroz igru: snaga i koordinacija, sportski duh i zdrave navike. Zabava i pokret za najmlađe.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== Trainers ===== -->
+  <section class="section trainers" id="trainers">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow"><span class="dot"></span> Treneri</p>
+        <h2 class="section__title">Ljudi iza ELEVEN-a</h2>
+        <p class="section__lead">Iskustvo, energija i istinska briga za tvoj napredak.</p>
+      </div>
+
+      <div class="trainer-grid">
+        <article class="trainer reveal">
+          <div class="ph ph--portrait"><span class="ph__label">Fotografija trenera</span></div>
+          <div class="trainer__body">
+            <h3>Kristian</h3>
+            <p class="trainer__role">Trener · Snaga &amp; boks</p>
+            <p>Specijaliziran za funkcionalnu snagu, kondiciju i boks. Vodi te kroz svaki ponavljanje s fokusom na ispravnu tehniku.</p>
+            <a href="https://www.instagram.com/kix1995/" target="_blank" rel="noopener" class="trainer__ig">@kix1995</a>
+          </div>
+        </article>
+
+        <article class="trainer reveal">
+          <div class="ph ph--portrait"><span class="ph__label">Fotografija trenerice</span></div>
+          <div class="trainer__body">
+            <h3>Ena Cvijanović</h3>
+            <p class="trainer__role">Trenerica · Žene &amp; funkcionalni trening</p>
+            <p>Strast prema treningu za žene i zdravom načinu života. Stvara atmosferu u kojoj se svaka polaznica osjeća snažno.</p>
+            <a href="https://www.instagram.com/ena_cvijanovic/" target="_blank" rel="noopener" class="trainer__ig">@ena_cvijanovic</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Start / steps (friendly + push) ===== -->
+  <section class="section start" id="start">
+    <div class="container">
+      <div class="section__head section__head--center reveal">
+        <p class="eyebrow"><span class="dot"></span> Počni danas</p>
+        <h2 class="section__title">Početak je lakši<br />nego što misliš</h2>
+        <p class="section__lead">Bez pritiska, bez osuđivanja. Samo tri koraka dijele te od prvog treninga.</p>
+      </div>
+
+      <div class="steps">
+        <article class="step reveal">
+          <span class="step__num">01</span>
+          <h3>Javiš se</h3>
+          <p>Pošalji poruku ili nazovi i reci nam svoj cilj. Mi se pobrinemo za ostalo — bez obveza.</p>
+        </article>
+        <article class="step reveal">
+          <span class="step__num">02</span>
+          <h3>Dođeš na probni trening</h3>
+          <p>Upoznaš trenere i prostor te odradiš prvi trening. Častimo — potpuno besplatno.</p>
+        </article>
+        <article class="step reveal">
+          <span class="step__num">03</span>
+          <h3>Kreneš s promjenom</h3>
+          <p>Dobiješ plan skrojen baš za tebe i zajednicu koja te gura naprijed iz tjedna u tjedan.</p>
+        </article>
+      </div>
+
+      <div class="start__cta reveal">
+        <a href="#contact" class="btn btn--gold btn--lg">Rezerviraj svoj prvi trening</a>
+        <span>Slobodno povedi i prijatelja 💪</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Reviews ===== -->
+  <section class="section reviews">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow"><span class="dot"></span> Recenzije</p>
+        <h2 class="section__title">Što kažu polaznici</h2>
+        <p class="section__lead">Savršena ocjena <strong class="text-gold">5.0 ★</strong> na Google-u.</p>
+      </div>
+      <div class="reviews__grid">
+        <blockquote class="review reveal">
+          <div class="review__stars">★★★★★</div>
+          <p>„Najbolja odluka — treneri su top, atmosfera odlična, a rezultati se vide. Preporuka svima!”</p>
+          <cite>Polaznica ELEVEN-a</cite>
+        </blockquote>
+        <blockquote class="review reveal">
+          <div class="review__stars">★★★★★</div>
+          <p>„Konačno trening na koji se veselim. Profesionalno, motivirajuće i prilagođeno meni.”</p>
+          <cite>Polaznik ELEVEN-a</cite>
+        </blockquote>
+        <blockquote class="review reveal">
+          <div class="review__stars">★★★★★</div>
+          <p>„Dolazila sam kao potpuni početnik i odmah se osjećala dobrodošlo. Sad ne mogu zamisliti tjedan bez treninga.”</p>
+          <cite>Polaznica ELEVEN-a</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA banner ===== -->
+  <section class="cta-banner">
+    <div class="container cta-banner__inner reveal">
+      <div>
+        <h2>Prvi trening je <span class="text-gold">besplatan.</span></h2>
+        <p>Dođi, isprobaj i osjeti razliku. Bez obveza — samo ti i dobar trening.</p>
+      </div>
+      <a href="#contact" class="btn btn--gold btn--lg">Prijavi se sada</a>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section contact" id="contact">
+    <div class="container contact__grid">
+      <div class="contact__info reveal">
+        <p class="eyebrow"><span class="dot"></span> Kontakt</p>
+        <h2 class="section__title">Krenimo zajedno</h2>
+        <p class="section__lead">Ispuni formu ili nam se javi direktno — odgovaramo brzo.</p>
+
+        <div class="contact__actions">
+          <a href="tel:+385996614375" class="contact-btn">
+            <span class="contact-btn__ic">📞</span>
+            <span><strong>Nazovi</strong>099 661 4375</span>
+          </a>
+          <a href="https://wa.me/385996614375" target="_blank" rel="noopener" class="contact-btn">
+            <span class="contact-btn__ic">💬</span>
+            <span><strong>WhatsApp</strong>Pošalji poruku</span>
+          </a>
+          <a href="https://www.instagram.com/eleven_fitness_studio/" target="_blank" rel="noopener" class="contact-btn">
+            <span class="contact-btn__ic">📸</span>
+            <span><strong>Instagram</strong>@eleven_fitness_studio</span>
+          </a>
+        </div>
+
+        <ul class="contact__meta">
+          <li><span>📍 Adresa</span><strong>Makarska ulica 40, 10000 Zagreb</strong></li>
+          <li><span>🕒 Radno vrijeme</span><strong>Pon–Pet do 22:00 · Sub po dogovoru</strong></li>
+        </ul>
+
+        <div class="map reveal">
+          <iframe
+            title="Lokacija ELEVEN fitness studio na karti"
+            src="https://www.google.com/maps?q=Makarska%20ulica%2040,%2010000%20Zagreb&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="contact__form-wrap reveal">
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
+          <h3>Prijava na besplatni probni trening</h3>
+
+          <label>
+            Ime i prezime
+            <input type="text" name="ime" required placeholder="Tvoje ime" />
+          </label>
+          <label>
+            Broj telefona
+            <input type="tel" name="telefon" required placeholder="099 123 4567" />
+          </label>
+          <label>
+            Email (nije obavezno)
+            <input type="email" name="email" placeholder="ime@email.com" />
+          </label>
+          <label>
+            Što te zanima?
+            <select name="program">
+              <option value="">Odaberi program…</option>
+              <option>Boks &amp; sparing</option>
+              <option>Funkcionalni trening</option>
+              <option>Bootcamp</option>
+              <option>Treninzi za žene</option>
+              <option>Privatni treninzi</option>
+              <option>FitKid / djeca</option>
+              <option>Nisam siguran/na — trebam savjet</option>
+            </select>
+          </label>
+          <label>
+            Poruka (nije obavezno)
+            <textarea name="poruka" rows="3" placeholder="Npr. kad ti odgovara dolazak…"></textarea>
+          </label>
+
+          <button type="submit" class="btn btn--gold btn--lg btn--block">Pošalji prijavu</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+          <p class="form-fineprint">Slanjem pristaješ da te kontaktiramo radi dogovora termina.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 100 100" width="40" height="40"><use href="#eleven-mark" /></svg>
+        </span>
+        <div>
+          <strong>ELEVEN</strong>
+          <span>fitness studio</span>
+        </div>
+      </div>
+      <nav class="footer__links" aria-label="Footer navigacija">
+        <a href="#about">O nama</a>
+        <a href="#programs">Treninzi</a>
+        <a href="#trainers">Treneri</a>
+        <a href="#start">Počni</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+      <div class="footer__contact">
+        <a href="tel:+385996614375">099 661 4375</a>
+        <a href="https://www.instagram.com/eleven_fitness_studio/" target="_blank" rel="noopener">@eleven_fitness_studio</a>
+        <span>Makarska ulica 40, Zagreb</span>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year"></span> ELEVEN fitness studio. Sva prava pridržana.</span>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile CTA -->
+  <a href="#contact" class="sticky-cta">Besplatni probni trening</a>
+
+  <!-- ===== SVG sprite (logo mark) ===== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="eleven-mark" viewBox="0 0 100 100">
+        <polygon points="50,8 84,28 84,72 50,92 16,72 16,28"
+                 fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/>
+        <g stroke="currentColor" stroke-width="2.4" stroke-linecap="round" opacity="0.85">
+          <line x1="34" y1="32" x2="34" y2="68"/>
+          <line x1="42" y1="30" x2="42" y2="70"/>
+          <line x1="58" y1="30" x2="58" y2="70"/>
+          <line x1="66" y1="32" x2="66" y2="68"/>
+        </g>
+        <!-- kettlebell -->
+        <path d="M43 44 a7 7 0 0 1 14 0" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+        <path d="M41 47 q9 -2 18 0 q6 4 4 13 a14 14 0 1 1 -26 0 q-2 -9 4 -13 Z"
+              fill="currentColor" stroke="none"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
