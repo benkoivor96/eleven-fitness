@@ -338,7 +338,9 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
   .nav__cta{margin-top:12px;width:100%}
   .nav__toggle{display:flex}
   .stats{grid-template-columns:repeat(2,1fr);gap:28px 20px}
-  .footer__inner{grid-template-columns:1fr;gap:26px}
+  .footer__inner{grid-template-columns:1fr;gap:26px;text-align:center}
+  .footer__brand{justify-content:center}
+  .footer__links,.footer__contact{align-items:center}
   .sticky-cta{display:block}
   .nav__cta{display:none}
   body{padding-bottom:76px}
@@ -349,4 +351,5 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
   .hero__badges{gap:18px 26px}
   .trainer{grid-template-columns:1fr}
   .trainer .ph{aspect-ratio:16/10}
+  .trainer__photo{min-height:auto;height:300px}
 }
