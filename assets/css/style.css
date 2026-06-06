@@ -351,5 +351,5 @@ button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
   .hero__badges{gap:18px 26px}
   .trainer{grid-template-columns:1fr}
   .trainer .ph{aspect-ratio:16/10}
-  .trainer__photo{min-height:auto;height:300px}
+  .trainer__photo{min-height:auto;height:380px}
 }
